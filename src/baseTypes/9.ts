@@ -6,10 +6,10 @@ type typePage = {
   title: string,
   likes: number,
   accounts: string[],
-  status: string,
+  status: 'open' | 'close',
   details?: {
-    createAt: unknown,
-    updateAt: unknown,
+    createAt: Date,
+    updateAt: Date,
   }
 }
 

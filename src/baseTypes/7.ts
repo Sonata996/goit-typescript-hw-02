@@ -4,25 +4,19 @@
 */
 
 enum DayWeek {
-  Day = "Friday",
-  Saturday = "Saturday",
-  Sunday = "Sunday"
-}
-
-const weekendDay = {
-  saturday: "Saturday",
-  sunday: "Sunday"
+  Mondey,
+  Tuesday,
+  Wednesday,
+  Thursday,
+  Friday,
+  Saturday,
+  Sunday
 }
 
 
 function isWeekend(day: DayWeek): boolean {
-  if (DayWeek.Day === weekendDay.saturday || weekendDay.sunday) {
-    console.log(true);
-    return true
-  } else {
-    return false
-  }
+ return day === DayWeek.Saturday  || day === DayWeek.Sunday
   
 }
 
-isWeekend(DayWeek.Day)
+isWeekend(DayWeek.Friday)

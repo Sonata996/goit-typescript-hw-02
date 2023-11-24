@@ -12,11 +12,9 @@ class Component<T> {
     
   }
 }
-interface PageComponent extends InterComponent{
-title: string;
-}
 
-class Page extends Component<PageComponent> {
+
+class Page extends Component<InterComponent> {
   pageInfo () {
     console.log(this.props.title);
   }
